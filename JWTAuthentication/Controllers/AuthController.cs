@@ -22,8 +22,8 @@ namespace JWTAuthentication.Controllers
         {
             configuration = _configure;
         }
+        
         [HttpPost("UserRegister")]
-       
         public  ActionResult<User> userRegistration(UserDto user)
         {
             var newPasswordHash = BCrypt.Net.BCrypt.HashPassword(user.password);
