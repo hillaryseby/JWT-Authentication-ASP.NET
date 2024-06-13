@@ -1,4 +1,5 @@
 ﻿using BCrypt.Net;
+using JWTAuthentication.Constants;
 using JWTAuthentication.DataTransferObjects;
 using JWTAuthentication.Models;
 using Microsoft.AspNetCore.Identity;
@@ -22,8 +23,8 @@ namespace JWTAuthentication.Controllers
         {
             configuration = _configure;
         }
+        
         [HttpPost("UserRegister")]
-       
         public  ActionResult<User> userRegistration(UserDto user)
         {
             var newPasswordHash = BCrypt.Net.BCrypt.HashPassword(user.password);
@@ -38,10 +39,7 @@ namespace JWTAuthentication.Controllers
         [HttpPost("UserLogin")]
         public ActionResult<User> userLogin(UserDto user)
         {
-            //if((newUser.UserName != user.UserName) && !(BCrypt.Net.BCrypt.Verify(user.password,newUser?.PasswordHash)))
-            //{
-            //    return BadRequest("UserName or Password is wrong");
-            //}
+            
 
             if(newUser.UserName != user.UserName)
             {
@@ -59,8 +57,11 @@ namespace JWTAuthentication.Controllers
 
         private string CreateToken(User user)
         {
+           
             List<Claim> clain = new List<Claim>() {
-          new Claim(ClaimTypes.Name , user.UserName)
+          new Claim(ClaimTypes.Name , user.UserName),
+          new Claim(ClaimTypes.Role, "Admin"),
+          new Claim(ClaimTypes.Role, "user")
           };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
                 configuration.GetSection("Jwt:Token").Value!));
