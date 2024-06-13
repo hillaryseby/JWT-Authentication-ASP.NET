@@ -1,5 +1,6 @@
 ﻿using JWTAuthentication.DataTransferObjects;
 using JWTAuthentication.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Routing;
 
@@ -17,6 +18,7 @@ namespace JWTAuthentication.Controllers
         }
 
         [HttpPost("AddUserData")]
+        
         public async Task<IActionResult> AddUserData([FromBody]UserDataDto user)
         {
             await Task.Run(() =>
@@ -26,7 +28,7 @@ namespace JWTAuthentication.Controllers
             return Ok();
         }
 
-        [HttpGet("GetUsersDetails")]
+        [HttpGet("GetUsersDetails"), Authorize(Roles = "Admin , user")]
         public async Task<IActionResult> GetUserData()
         {
             return await Task.Run(async () =>

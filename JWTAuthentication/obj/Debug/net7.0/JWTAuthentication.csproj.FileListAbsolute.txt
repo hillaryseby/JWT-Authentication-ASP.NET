@@ -45,10 +45,13 @@ C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\JWTAuthentication.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\JWTAuthentication.pdb
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -76,3 +79,7 @@ C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\obj\Debug\net7.0\
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\obj\Debug\net7.0\JWTAuthentication.pdb
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\obj\Debug\net7.0\JWTAuthentication.genruntimeconfig.cache
 C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\obj\Debug\net7.0\ref\JWTAuthentication.dll
+C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Scrutor.dll
+C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\hilla\source\repos\JWTAuthenication\JWTAuthentication\bin\Debug\net7.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
